@@ -120,7 +120,7 @@ p {
     background: hsl(224, 30%, 27%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .container {
         width: 375px;
         margin: 0 auto;
