@@ -1,0 +1,142 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Hanken Grotesk';
+}
+
+p {
+    font-size: 18px;
+}
+
+.left {
+    text-align: left;
+    flex: auto;
+}
+
+.right {
+    text-align: right;
+    flex: auto; 
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.pl-10 {
+    padding-left: 30px;
+}
+
+.total-score {
+    background: hsla(230, 83%, 56%,0.9);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    height: auto;
+    color: #FFFFFF;
+    border-radius: 10%;
+    width: 300px;
+}
+
+.result {
+    background: linear-gradient(180deg, hsl(241deg 68.12% 48.8%), hsla(166, 100%, 37%,0.01));
+    border-radius: 50%;
+    padding: 35px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.results-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.subject-marks1, .subject-marks2, .subject-marks3, .subject-marks4 {
+    display: flex;
+    border-radius: 10px;
+    width: 285px;
+    margin: 20px 30px;
+    padding: 0 17px;
+}
+
+.subject-marks1 {
+    background: hsla(0, 100%, 67%,0.07);
+}
+
+.subject-marks2 {
+    background: hsla(39, 100%, 56%,0.07);
+}
+
+.subject-marks3 {
+    background: hsla(166, 100%, 37%,0.07);
+}
+
+.subject-marks4 {
+    background: hsla(234, 85%, 45%,0.07);
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+.subject-marks1 .left {
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+}
+
+.subject-marks2 .left {
+    color: hsl(39, 100%, 56%);
+    font-weight: 700;
+}
+
+.subject-marks3 .left {
+    color: hsl(166, 100%, 37%);
+    font-weight: 700;
+}
+
+.subject-marks4 .left {
+    color: hsl(234, 85%, 45%);
+    font-weight: 700;
+}
+
+.continue-button {
+    background: hsla(230, 83%, 56%,0.9);
+    padding: 1px 0;
+    border-radius: 40px;
+    width: 320px;
+    color: white;
+    margin: 0 auto;
+    display: block;
+}
+
+.continue-button:active {
+    background: hsl(224, 30%, 27%);
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 375px;
+    }
+
+    .results-summary {
+        display: block; 
+    }
+
+    .summary { 
+        padding: 10px 0px 0px 0;
+    }
+
+    .total-score {
+        border-radius: revert;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        width: auto;
+    }
+}
